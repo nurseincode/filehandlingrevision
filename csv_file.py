@@ -15,3 +15,10 @@ print(f'Total goals in the tournament so far: {total_goals}')
 with open('new_matches.csv', 'w') as file:
     writer = csv.DictWriter(file, ['Team A', 'Team B', 'Score A', 'Score B', 'Date'])
     writer.writeheader()
+    writer.writerow({
+        'Team A': 'Zimbabwe',
+        'Team B': 'Zambia',
+        'Score A': 1,
+        'Score B': 1,
+        'Date': '2026-11-20'
+    })
