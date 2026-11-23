@@ -29,9 +29,10 @@ matches = [
 
 ]
 with open('new_matches.csv', 'w') as file:
-    writer = csv.DictWriter(file, ['Team A', 'Team B', 'Score A', 'Score B', 'Date'])
+    # writer = csv.DictWriter(file, ['Team A', 'Team B', 'Score A', 'Score B', 'Date'])
+    writer = csv.DictWriter(file, matches[0].keys())
     writer.writeheader()
-    writer.writerows(matches)
+    # writer.writerows(matches)
     # writer.writerow({
     #     'Team A': 'Zimbabwe',
     #     'Team B': 'Zambia',
