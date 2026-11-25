@@ -18,4 +18,5 @@ matches = [
 
 ]
 
-print(json.dumps(matches))
+with open('matches.json', 'w') as file:
+    (json.dump(matches, file, indent=4))

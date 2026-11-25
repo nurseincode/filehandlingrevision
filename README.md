@@ -4,3 +4,5 @@
     - OS needs to allocte resources
     - Exclusive lock on the file
     - Track position in the file - read sequentially
+
+## Demo: Terminal App
